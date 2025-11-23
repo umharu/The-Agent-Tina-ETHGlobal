@@ -1,7 +1,9 @@
-MIT License
-
 Original Copyright (c) 2025 Nethermind
-Modifications Copyright (c) 2025 Maximiliano (@umharu) maximilian0.eth 🇦🇷
+Maximiliano (umharu) maximilian0.eth 🇦🇷
+
+This project extends the Nethermind AgentArena boilerplate.  
+All multi-agent audit logic, prompts, and ETHGlobal additions were developed
+during the ETHGlobal hackathon.
 
 The Agent Tina is an extended and customized version of the Nethermind AgentArena 
 template. All additional logic—including multi-strategy security analysis, custom 
