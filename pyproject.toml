@@ -1,4 +1,3 @@
-
 [build-system]
 requires = ["hatchling"]
 build-backend = "hatchling.build"
@@ -7,28 +6,27 @@ build-backend = "hatchling.build"
 # Project Metadata
 # -------------------------------------
 [project]
-name = "agent-tina"   # Project name (was: solidity-audit-agent)
+name = "agent-tina"
 version = "0.1.0"
-description = "The Agent Tina – AI-powered multi-strategy Solidity audit agent"  # Updated description
+description = "The Agent Tina – AI-powered multi-strategy Solidity audit agent"
 readme = "README.md"
 requires-python = ">=3.8"
 license = {file = "LICENSE"}
 
-# Runtime dependencies for the audit agent
+# Dependencies for running the audit agent
 dependencies = [
     "fastapi>=0.95.0",           # Webhook server for AgentArena integration
     "uvicorn>=0.21.1",           # ASGI server
-    "httpx>=0.24.0",             # HTTP client for OpenAI + GitHub interactions
-    "pydantic>=1.10.7",          # Validation and models
-    "pydantic_settings>=2.0.0",  # Environment variables config
-    "python-dotenv>=1.0.0",      # Load .env file
-    "openai>=1.0.0",             # OpenAI API for audit strategies
-    "gitpython>=3.1.31",         # Clone external Solidity repos
-    "questionary>=2.0.1",        # CLI prompts
+    "httpx>=0.24.0",             # HTTP client for OpenAI + GitHub calls
+    "pydantic>=1.10.7",          # Data models + validation
+    "pydantic_settings>=2.0.0",  # .env config loader
+    "python-dotenv>=1.0.0",
+    "openai>=1.0.0",
+    "gitpython>=3.1.31",
+    "questionary>=2.0.1",
 ]
 
-# Console script that exposes the CLI:
-# Running `audit-agent` will call agent/main.py -> main()
+# Console command: `audit-agent`
 [project.scripts]
 audit-agent = "agent.main:main"
 
@@ -36,19 +34,20 @@ audit-agent = "agent.main:main"
 # Build Configuration
 # -------------------------------------
 [tool.hatch.build.targets.wheel]
-packages = ["agent"]   # Include the "agent" package in the build
+packages = ["agent"]
 
 # -------------------------------------
-# Ruff Linter Configuration
+# Code Quality
 # -------------------------------------
 [tool.ruff]
-line-length = 100       # Max line length
-target-version = "py38" # Python compatibility target
-select = ["E", "F", "I"]  # Enabled linting rules
+line-length = 100
+target-version = "py38"
+select = ["E", "F", "I"]
 
 # -------------------------------------
-# Pytest Configuration
+# Testing
 # -------------------------------------
 [tool.pytest.ini_options]
 testpaths = ["tests"]
 python_files = "test_*.py"
+
