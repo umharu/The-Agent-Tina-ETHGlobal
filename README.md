@@ -188,9 +188,10 @@ Potential improvements and enhancements for The Agent Tina:
 
 MIT
 
-🤝 Credits
-Built with ❤️ by maximilian0.eth for ETH Global
+### 🤝 Credits
 
-This project was originally bootstrapped using the
-Nethermind AgentArena agent-template boilerplate, which provides the core project structure, webhook server scaffolding, and CLI integration for AgentArena.
-All additional logic — including custom AI prompts, multi-strategy audit architecture, enhanced analysis pipeline, branding, code organization, and the complete “Agent Tina” identity — was developed during the ETHGlobal hackathon.
+Built with ❤️ by **maximilian0.eth** for ETHGlobal.
+
+This project was originally bootstrapped using the  
+**Nethermind AgentArena agent-template boilerplate**, which provides the base structure, webhook server, and CLI foundation.  
+All audit logic, custom prompts, strategies, and multi-agent architecture were developed during the ETHGlobal hackathon.
