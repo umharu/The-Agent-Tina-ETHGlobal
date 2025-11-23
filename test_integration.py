@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+#Testing works OK
 """
 Integration test for Agent-Tina multi-strategy architecture.
 
