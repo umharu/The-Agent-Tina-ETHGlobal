@@ -1,4 +1,4 @@
-# The Agent Tina – AI-Powered Solidity Audit Agent
+# The Agent Tina 🇦🇷 – AI-Powered Solidity Audit Agent 
 
 An AI-powered security audit agent for Solidity smart contracts, built for an ETHGlobal hackathon. The Agent Tina analyzes smart contract codebases using multiple specialized analysis strategies to identify security vulnerabilities and produce comprehensive audit reports.
 
@@ -192,6 +192,11 @@ MIT
 
 Built with ❤️ by **maximilian0.eth** for ETHGlobal.
 
-This project was originally bootstrapped using the  
-**Nethermind AgentArena agent-template boilerplate**, which provides the base structure, webhook server, and CLI foundation.  
-All audit logic, custom prompts, strategies, and multi-agent architecture were developed during the ETHGlobal hackathon.
+## Disclaimer (Hackathon Notes)
+
+This project was developed entirely during the ETHGlobal hackathon.  
+The repository may show **recent commits only**, because the project originally began using the official **Nethermind AgentArena boilerplate**, which predates the hackathon.  
+To comply with ETHGlobal submission rules, the project was moved into a fresh repository so the commit history reflects only hackathon-time work.
+
+All logic, strategies, prompts, audit flow, analysis pipeline, and branding for *Agent Tina* were created during the hackathon.  
+Only the base boilerplate structure was reused.
